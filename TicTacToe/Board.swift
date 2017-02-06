@@ -10,6 +10,7 @@ import UIKit
 
 protocol BoardDelegate: class {
     func playerTurn(board: Board, position: Int) -> Player
+    func turnDone()
 }
 
 
@@ -85,7 +86,10 @@ extension Board {
         let player = delegate.playerTurn(board: self, position: imageView.tag)
         imageView.removeGestureRecognizer(sender)
         animateTurn(imageView: imageView, player: player)
+        delegate.turnDone()
     }
+
+
     
     func animateTurn(imageView: UIImageView, player: Player) {
         imageView.alpha = 0.0

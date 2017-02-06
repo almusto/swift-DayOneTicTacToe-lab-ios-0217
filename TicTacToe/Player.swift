@@ -12,7 +12,7 @@ import UIKit
 
 enum Player {
     
-    case x, o
+    case x, o, y
     
     var image: UIImage {
         switch self {
@@ -20,6 +20,8 @@ enum Player {
             return #imageLiteral(resourceName: "OImage")
         case .x:
             return #imageLiteral(resourceName: "XImage")
+        case .y:
+          return #imageLiteral(resourceName: "XImage")
         }
     }
     
