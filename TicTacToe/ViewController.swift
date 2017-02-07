@@ -217,7 +217,10 @@ class ViewController: UIViewController, BoardDelegate {
 //    let randomBoard = arc4random_uniform(8) + 0
 //    let board = allBoards[Int(randomBoard)]
 //    let randomPosition = arc4random_uniform(8) + 0
-//    let imageView = board[Int(randomPosition)]
+//    let imageView = board
+//    imageView.animateTurn(imageView: imageView, player: .o)
+
+
   }
 
 
